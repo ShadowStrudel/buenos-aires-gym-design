@@ -6,11 +6,11 @@ import { MapPin, Navigation, Car, Train, Bus } from "lucide-react"
 
 export function LocationSection() {
   const openGoogleMaps = () => {
-    window.open("https://maps.google.com/?q=Av.+Corrientes+1234,+CABA+Buenos+Aires,+Argentina", "_blank")
+    window.open("https://www.google.com/maps/place/Buenos+Aires+Gym+Center/@-34.6663817,-58.5280716,20z/data=!4m6!3m5!1s0x95bcc8f3afc7c1db:0xbaff58930fd6f9b0!8m2!3d-34.6664189!4d-58.5280043!16s%2Fg%2F1tdc1v3s?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D", "_blank")
   }
 
   const openDirections = () => {
-    window.open("https://www.google.com/maps/dir//Av.+Corrientes+1234,+CABA+Buenos+Aires,+Argentina", "_blank")
+    window.open("https://www.google.com/maps/dir//Buenos+Aires+Gym+Center,+Av.+Brig.+Gral.+Juan+Manuel+de+Rosas+770,+B1752+Lomas+del+Mirador,+Provincia+de+Buenos+Aires/@-34.6663817,-58.5280716,20z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95bcc8f3afc7c1db:0xbaff58930fd6f9b0!2m2!1d-58.5280509!2d-34.6663755!3e0?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D", "_blank")
   }
 
   return (
@@ -25,14 +25,13 @@ export function LocationSection() {
             Encontranos en el corazón de Buenos Aires, con fácil acceso en transporte público y privado.
           </p>
         </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Map */}
           <div className="order-2 lg:order-1">
             <Card className="border-2 border-border overflow-hidden">
               <div className="relative h-96 bg-muted">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168903552!2d-58.38375908477!3d-34.60373998045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd0f8c6c4d4c8a!2sAv.+Corrientes+1234%2C+C1043+CABA!5e0!3m2!1sen!2sar!4v1635789012345!5m2!1sen!2sar"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d410.1921862880421!2d-58.5280716!3d-34.6663817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8f3afc7c1db%3A0xbaff58930fd6f9b0!2sBuenos%20Aires%20Gym%20Center!5e0!3m2!1ses!2sar!4v1758920469204!5m2!1ses!2sar"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -45,7 +44,7 @@ export function LocationSection() {
               </div>
             </Card>
 
-            <div className="flex gap-4 mt-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
               <Button onClick={openGoogleMaps} className="flex-1 gym-button-outline bg-transparent">
                 <MapPin size={16} className="mr-2" />
                 Ver en Google Maps
@@ -70,9 +69,9 @@ export function LocationSection() {
               <CardContent>
                 <div className="space-y-2">
                   <p className="text-lg font-semibold">Buenos Aires Gym Center</p>
-                  <p className="text-muted-foreground">Av. Corrientes 1234</p>
-                  <p className="text-muted-foreground">C1043 CABA, Buenos Aires</p>
-                  <p className="text-muted-foreground">Argentina</p>
+                  <p className="text-muted-foreground">Av. Brig. Gral. Juan Manuel de Rosas 770</p>
+                  <p className="text-muted-foreground">B1752, Lomas del Mirador</p>
+                  <p className="text-muted-foreground">Provincia de Buenos Aires</p>
                 </div>
               </CardContent>
             </Card>

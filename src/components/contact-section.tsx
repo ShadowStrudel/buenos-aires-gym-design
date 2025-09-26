@@ -15,7 +15,7 @@ export function ContactSection() {
     const message = encodeURIComponent(
       "¡Hola! Me interesa conocer más sobre Buenos Aires Gym Center. ¿Podrían brindarme información sobre los planes y horarios?",
     )
-    window.open(`https://wa.me/5491123456789?text=${message}`, "_blank")
+    // window.open(`https://wa.me/5491123456789?text=${message}`, "_blank")
   }
 
   const openEmail = () => {
@@ -23,11 +23,11 @@ export function ContactSection() {
     const body = encodeURIComponent(
       "Hola,\\n\\nMe interesa conocer más sobre los servicios del gimnasio. ¿Podrían brindarme información sobre:\\n\\n- Planes disponibles\\n- Horarios de clases\\n- Instalaciones\\n\\nGracias!",
     )
-    window.open(`mailto:info@buenosairesgymc.com?subject=${subject}&body=${body}`, "_blank")
+    // window.open(`mailto:info@buenosairesgymc.com?subject=${subject}&body=${body}`, "_blank")
   }
 
   const openInstagram = () => {
-    window.open("https://instagram.com/buenosairesgymc", "_blank")
+    window.open("https://instagram.com/buenosairesgymcent", "_blank")
   }
 
   return (
@@ -53,7 +53,7 @@ export function ContactSection() {
             <CardContent className="space-y-4">
               <Button onClick={openWhatsApp} className="w-full gym-button flex items-center justify-center gap-3">
                 <MessageCircle size={20} />
-                WhatsApp: +54 9 11 2345-6789
+                WhatsApp: +54 9 11 1111-1111
               </Button>
 
               <Button

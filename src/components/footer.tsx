@@ -13,15 +13,15 @@ export function Footer() {
 
   const openWhatsApp = () => {
     const message = encodeURIComponent("¡Hola! Me interesa conocer más sobre Buenos Aires Gym Center.")
-    window.open(`https://wa.me/5491123456789?text=${message}`, "_blank")
+    // window.open(`https://wa.me/5491123456789?text=${message}`, "_blank")
   }
 
   const openInstagram = () => {
-    window.open("https://instagram.com/buenosairesgymc", "_blank")
+    window.open("https://instagram.com/buenosairesgymcent", "_blank")
   }
 
   const openEmail = () => {
-    window.open("mailto:info@buenosairesgymc.com", "_blank")
+    // window.open("mailto:info@buenosairesgymc.com", "_blank")
   }
 
   return (
@@ -130,15 +130,15 @@ export function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin size={16} className="text-yellow-500 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">Av. Corrientes 1234</p>
-                  <p className="text-gray-300">CABA, Buenos Aires</p>
+                  <p className="text-gray-300">Av. Brig. Gral. Juan Manuel de Rosas 770</p>
+                  <p className="text-gray-300">Lomas del mirador, Buenos Aires</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-2">
                 <Phone size={16} className="text-yellow-500" />
                 <button onClick={openWhatsApp} className="text-gray-300 hover:text-yellow-500 transition-colors">
-                  +54 9 11 2345-6789
+                  +54 9 11 1111-1111
                 </button>
               </div>
 
